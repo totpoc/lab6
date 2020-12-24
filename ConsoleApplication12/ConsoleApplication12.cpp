@@ -33,10 +33,6 @@ int main()
             for (int j = spacePosition; j <= i; j++)
             {
                 charactersEnded = false;
-                if (inputString[j] == ' ' && j == spacePosition)
-                {
-                    j++;
-                }
                 
                 if (!consistsOfNumbers) {
                     if (((inputString[j] >= 122 || inputString[j] <= 65) || ((inputString[j] <= 96 && inputString[j] >= 90) && inputString[j] != 95)) && !charactersEnded)
